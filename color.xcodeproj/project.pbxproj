@@ -13,6 +13,8 @@
 		A764EA182634A2F40093BAF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A764EA162634A2F40093BAF0 /* Main.storyboard */; };
 		A764EA1A2634A2F50093BAF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A764EA192634A2F50093BAF0 /* Assets.xcassets */; };
 		A764EA1D2634A2F50093BAF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A764EA1B2634A2F50093BAF0 /* LaunchScreen.storyboard */; };
+		A764EA252634A39F0093BAF0 /* 清松手寫體2jas.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A764EA242634A39F0093BAF0 /* 清松手寫體2jas.ttf */; };
+		A764EA292634AB7F0093BAF0 /* CALayer+CALayer_borderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A764EA282634AB7F0093BAF0 /* CALayer+CALayer_borderColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		A764EA192634A2F50093BAF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A764EA1C2634A2F50093BAF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A764EA1E2634A2F50093BAF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A764EA242634A39F0093BAF0 /* 清松手寫體2jas.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "清松手寫體2jas.ttf"; sourceTree = "<group>"; };
+		A764EA262634AB7F0093BAF0 /* color-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "color-Bridging-Header.h"; sourceTree = "<group>"; };
+		A764EA272634AB7F0093BAF0 /* CALayer+CALayer_borderColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+CALayer_borderColor.h"; sourceTree = "<group>"; };
+		A764EA282634AB7F0093BAF0 /* CALayer+CALayer_borderColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+CALayer_borderColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,8 +46,11 @@
 		A764EA042634A2F40093BAF0 = {
 			isa = PBXGroup;
 			children = (
+				A764EA272634AB7F0093BAF0 /* CALayer+CALayer_borderColor.h */,
+				A764EA282634AB7F0093BAF0 /* CALayer+CALayer_borderColor.m */,
 				A764EA0F2634A2F40093BAF0 /* color */,
 				A764EA0E2634A2F40093BAF0 /* Products */,
+				A764EA262634AB7F0093BAF0 /* color-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +65,7 @@
 		A764EA0F2634A2F40093BAF0 /* color */ = {
 			isa = PBXGroup;
 			children = (
+				A764EA242634A39F0093BAF0 /* 清松手寫體2jas.ttf */,
 				A764EA102634A2F40093BAF0 /* AppDelegate.swift */,
 				A764EA122634A2F40093BAF0 /* SceneDelegate.swift */,
 				A764EA142634A2F40093BAF0 /* ViewController.swift */,
@@ -98,6 +108,7 @@
 				TargetAttributes = {
 					A764EA0C2634A2F40093BAF0 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -126,6 +137,7 @@
 			files = (
 				A764EA1D2634A2F50093BAF0 /* LaunchScreen.storyboard in Resources */,
 				A764EA1A2634A2F50093BAF0 /* Assets.xcassets in Resources */,
+				A764EA252634A39F0093BAF0 /* 清松手寫體2jas.ttf in Resources */,
 				A764EA182634A2F40093BAF0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A764EA152634A2F40093BAF0 /* ViewController.swift in Sources */,
+				A764EA292634AB7F0093BAF0 /* CALayer+CALayer_borderColor.m in Sources */,
 				A764EA112634A2F40093BAF0 /* AppDelegate.swift in Sources */,
 				A764EA132634A2F40093BAF0 /* SceneDelegate.swift in Sources */,
 			);
@@ -286,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WA34G25776;
 				INFOPLIST_FILE = color/Info.plist;
@@ -295,6 +309,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jhen.color;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "color-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WA34G25776;
 				INFOPLIST_FILE = color/Info.plist;
@@ -314,6 +331,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jhen.color;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "color-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
