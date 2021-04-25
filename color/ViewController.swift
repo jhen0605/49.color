@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     // 圖片：背景、帽子純色（mask前）
     @IBOutlet weak var BackgroundImageView: UIImageView!
     @IBOutlet weak var headView: UIView!
-    @IBOutlet weak var starView: UIView!
+// @IBOutlet weak var starView: UIView!
     // 圖片：花紋圖片
     @IBOutlet weak var giraffeView: UIImageView!
     @IBOutlet weak var tigerView: UIImageView!
@@ -59,6 +59,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //顏色sliderThumb
+        redSlider.setThumbImage(UIImage(named: "兔兔"), for: .normal)
+        greenSlider.setThumbImage(UIImage(named: "毛毛蟲"), for: .normal)
+        blueSlider.setThumbImage(UIImage(named: "熊大"), for: .normal)
+        alphaSlider.setThumbImage(UIImage(named: "莎莉"), for: .normal)
+        //功能sliderThumb
+        radiusSlider.setThumbImage(UIImage(named: "饅頭人"), for: .normal)
+        borderSlider.setThumbImage(UIImage(named: "饅頭人1"), for: .normal)
+        shadowSlider.setThumbImage(UIImage(named: "饅頭人2"), for: .normal)
+        
         let headImageView = UIImageView(image: UIImage(named: "head"))
                  headImageView.frame = headView.bounds
                  headImageView.contentMode = .scaleAspectFill
